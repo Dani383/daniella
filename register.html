@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background: rgb(190, 178, 168);
+        }
+        #container{
+            background-color: rgb(46, 129, 29);
+            width:50%;
+            margin-left:auto;
+            margin-right:auto;
+            padding:100px;
+            font-size:large;
+        }
+        label:first-child{
+            color: #fff;
+            display: inline-block;
+            width:30%;
+            margin-top:10px;
+        }        
+      input[type=submit]{
+          background-color: #fff;
+          padding: 5px 10px;
+      }
+        @media screen and (max-width:700px){
+            body{
+           background-color:yellow;
+        }
+           label:first-child{
+            display:block;
+            width: 100px;
+           }
+        }
+           
+           
+    </style>
+</head>
+<body>
+    <div id="#container"></div>
+
+    <h1>Student registration </h1>
+    <form action="#" method="POST">
+        <div>
+            <label for= "fname">FirstName</label>
+            <input type="text" name="firstname" id="fname" placeholder="Enter first Name" required>
+        </div>
+       
+        <div>
+            <label for="lname">LastName</label>
+            <input type="text" name="lastname" id="lname" placeholder="Enter last Name" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+        </div>
+
+         <div>
+            <label for="dob">Date of Birth </label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        
+        <div>
+            <label for="gender">Gender</label> 
+            <input id="gender">
+            <input type="radio" name="gender"  value="male"  id="male"> <label for="male">Male</label>
+            <input type="radio" name="gender"  value="female"  id="female"> <label for="female">female</label>
+        </div>
+
+        <div>
+            <label>Languages </label>
+            <br>
+            <input type="checkbox" name="kinyarwanda" id="kinya" value="rw"> <label for="kinya">Kinyarwanda</label>
+            <br>
+            <input type="checkbox" name="english" id="eng" value="eng"><label for="eng">English</label>
+            <br>
+            <input type="checkbox" name="french" id="fr" value="fr"><label for="fr">French</label>
+            <br>
+            <input type="checkbox" name="kiswahili" id="kis" value="kis"><label for="kis">Kiswahili</label>
+            <br>
+        </div>
+        
+        <div>
+            <label for="nationality">Nationality</label>
+            <select name="nationality" id="nationality">
+                <option value="">Rwanda</option>
+                <option value="">Uganda</option>
+                <option value="">Tanzania</option>
+                <option value="">DRC</option>
+                <option value="">Kenya</option>
+
+            </select>
+
+            <div>
+                <label for="details">Tell us your hobbies</label>
+                <textarea name="nationality" id="details"></textarea>
+
+             <!--https://codeshare.io/ajxDJR -->
+             </div>
+
+
+             <div>
+                <label for="request">Request </label>
+                <br>
+                <textarea   id="request"  name="request"  rows="5"  cols="100"> </textarea>  
+                <br>
+             </div>
+
+             <div>
+            <input type="submit" name="register" value="register">
+        </div>
+
+
+    </div>
+
+</form>
+</body>
+</html>
